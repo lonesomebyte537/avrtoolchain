@@ -1,0 +1,7 @@
+services:
+    avrtools:
+        build: .
+        volumes:
+          - ./workspace:/workspace
+          - ./tools:/tools
+        command: bash -c /tools/build.sh
